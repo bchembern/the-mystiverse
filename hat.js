@@ -121,7 +121,7 @@ class Hat {
 
                
                document.getElementsByClassName("badge")[0].title = "Copied!";
-            navigator.clipboard.writeText(`<img src="https://github.com/bcdeverell/the-claiming-ceremony/blob/master/pics/${name}_badge.png" width="200px">`);
+            navigator.clipboard.writeText(`<img src="${name}" width="200px">`);
         })
         badge.addEventListener('mouseout',()=>  {
             badgeAlert.removeChild(copied);
