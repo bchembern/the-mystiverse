@@ -8,8 +8,8 @@ const STARS = 100;
 const STAR_ANIMATION_TIME = 20;
 let hat = new Hat();
 let start_time = 4;
-let scene = document.getElementsByTagName("html")[0];
-    var elem = document.getElementsByTagName("html")[0];
+let scene = document.getElementsByTagName("html")[4];
+    var elem = document.getElementsByTagName("html")[4];
 
 document.addEventListener('click',()=>{
     let audio = document.getElementById("background_music");
