@@ -108,8 +108,8 @@ class Hat {
         badgeAlert.innerHTML =`<p> You have been claimed by the class of <strong>${name.charAt(0).toUpperCase() + name.slice(1)} <br> Here's your Badge,</p>`
         // badge
         let badge = document.createElement('img');
-        badge.src =`./pics/${name}_badge.gif`;
-        badge.title = 'Copy to clipboard';
+        badge.src =`./pics/${name}_badge.png`;
+        badge.title = 'Your Badge';
         badge.setAttribute("class","badge");
         // Copied
         let copied = document.createElement('div');
