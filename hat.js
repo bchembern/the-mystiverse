@@ -82,67 +82,7 @@ class Hat {
         setTimeout(()=>this.displayBadgePage(CURRENT_TEAM.color,CURRENT_TEAM.name),2000);
     }
 
-    displayBadgePage(color,name){
-        let badgePage = document.getElementsByTagName('body')[0];
-        badgePage.style.animation= "";
-        badgePage.style.backgroundColor='';
-        document.getElementById('landing').innerHTML= ``;
-        let badgeDiv = document.createElement('div');
-        badgeDiv.setAttribute("class","badge-div");
-        badgeDiv.style.backgroundColor=color;
-        // Badge Image
-        let badgeImage = document.createElement('img');
-        badgeImage.src = `./pics/${name}.png`;
-        badgeImage.setAttribute("class","badge-image");
-        badgeImage.innerHTML=`<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/${name}_badge.gif" width="200px">
-        </img>`;
-        badgeDiv.appendChild(badgeImage);
-        // Congratulations Text
-        let congratsText = document.createElement('h2');
-        congratsText.setAttribute("class","congrats hp");
-        congratsText.innerText = 'Congratulations';
-        badgeDiv.appendChild(congratsText);
-        // Badge Alert
-        let badgeAlert = document.createElement('div');
-        badgeAlert.setAttribute("class","badge-alert");
-        badgeAlert.innerHTML =`<p> You have been claimed by the class of <strong>${name.charAt(0).toUpperCase() + name.slice(1)} <br> Here's your Badge,</p>`
-        // badge
-        let badge = document.createElement('img');
-        badge.src =`./pics/${name}_badge.gif`;
-        badge.title = 'Copy to clipboard';
-        badge.setAttribute("class","badge");
-        // Copied
-        let copied = document.createElement('div');
-        copied.setAttribute('class','copied');
-        copied.innerText = ` Copied !`;
-
-        badge.addEventListener('click',(e)=>{
-            badgeAlert.appendChild(copied);
-
-               
-               document.getElementsByClassName("badge")[0].title = "Copied!";
-            navigator.clipboard.writeText(`<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/${name}_badge.gif" width="200px">`);
-        })
-        badge.addEventListener('mouseout',()=>  {
-            badgeAlert.removeChild(copied);
-      
-            badge.title = 'Copy to clipboard' });
-        badgeAlert.appendChild(badge);
-        badgeDiv.appendChild(badgeAlert)
-        
-        
-
-        badgeDiv.style.animation= "0.5s appear1 3s forwards";
-
-        document.getElementById('landing').appendChild(badgeDiv);
-        document.documentElement.style.setProperty("--page-color", color);
-
-        badgePage.style.animation = "3s appear forwards ease";
-        setTimeout(()=> {
-            confetti.start()
-            confetti.speed = 1;
-        },3000);
-    }
+   
     think(ANIM_TIME){
         let thoughts = document.getElementById("thoughts");
         let randomThought = this.getRandomThought();
