@@ -94,7 +94,7 @@ class Hat {
         let badgeImage = document.createElement('img');
         badgeImage.src = `./pics/${name}.png`;
         badgeImage.setAttribute("class","badge-image");
-        badgeImage.innerHTML=`<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/hufflepuff_badge.gif" width="200px">
+        badgeImage.innerHTML=`<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/${name}_badge.gif" width="200px">
         </img>`;
         badgeDiv.appendChild(badgeImage);
         // Congratulations Text
