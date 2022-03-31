@@ -4,7 +4,6 @@ const TEAMS = {
     SERPENTISS : {id:2,color:'#1A472A',name:'serpentiss'},
     TALONFALL : {id:3,color:'#602f86',name:'talonfall'},
     BERENHEART : {id:4,color:'#ec6f39',name:'berenheart'}
-    CACKLESTAG : {id:5,color:'#3453a3',name:'cacklestag'}
 }
 
 let CURRENT_TEAM = null;
