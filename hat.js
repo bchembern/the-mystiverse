@@ -94,7 +94,7 @@ class Hat {
         let badgeImage = document.createElement('img');
         badgeImage.src = `./pics/${name}.png`;
         badgeImage.setAttribute("class","badge-image");
-        badgeImage.innerHTML=`<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/${name}_badge.png" width="200px">
+        badgeImage.innerHTML=`<img src="https://github.com/bcdeverell/the-claiming-ceremony/blob/master/pics/${name}_badge.png" width="200px">
         </img>`;
         badgeDiv.appendChild(badgeImage);
         // Congratulations Text
@@ -121,7 +121,7 @@ class Hat {
 
                
                document.getElementsByClassName("badge")[0].title = "Copied!";
-            navigator.clipboard.writeText(`<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/${name}_badge.png" width="200px">`);
+            navigator.clipboard.writeText(`<img src="https://github.com/bcdeverell/the-claiming-ceremony/blob/master/pics/${name}_badge.png" width="200px">`);
         })
         badge.addEventListener('mouseout',()=>  {
             badgeAlert.removeChild(copied);
