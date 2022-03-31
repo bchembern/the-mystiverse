@@ -105,7 +105,7 @@ class Hat {
         // Badge Alert
         let badgeAlert = document.createElement('div');
         badgeAlert.setAttribute("class","badge-alert");
-        badgeAlert.innerHTML =`<p> You have been sorted into <strong>${name.charAt(0).toUpperCase() + name.slice(1)} <br> Here's your Github Badge,</p>`
+        badgeAlert.innerHTML =`<p> You have been claimed by the class of <strong>${name.charAt(0).toUpperCase() + name.slice(1)} <br> Here's your Badge,</p>`
         // badge
         let badge = document.createElement('img');
         badge.src =`./pics/${name}_badge.gif`;
