@@ -7,7 +7,7 @@ const BROOMS = 20;
 const STARS = 100;
 const STAR_ANIMATION_TIME = 20;
 let hat = new Hat();
-let start_time = 0;
+let start_time = 4;
 let scene = document.getElementsByTagName("html")[0];
     var elem = document.getElementsByTagName("html")[0];
 
