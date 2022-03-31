@@ -1,8 +1,8 @@
 
 const ANIM_TIME = 2;
 const FLOAT_ANIM_TIME = 3;
-const THINKING_TIME = 4;
-const THINKING_DURATION = 2;
+const THINKING_TIME = 8;
+const THINKING_DURATION = 4;
 const BROOMS = 20;
 const STARS = 100;
 const STAR_ANIMATION_TIME = 20;
