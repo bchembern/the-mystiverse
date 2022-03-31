@@ -1,9 +1,9 @@
 
 const TEAMS = {
-    GOLDYNROAR : {id:1,color:'#740001',name:'goldynroar'},
-    SERPENTISS : {id:2,color:'#1A472A',name:'serpentiss'},
-    TALONFALL : {id:3,color:'#602f86',name:'talonfall'},
-    BERENHEART : {id:4,color:'#ec6f39',name:'berenheart'}
+    GOLDYNROAR : {id:1,color:'#6e1a1f',name:'goldynroar'},
+    SERPENTISS : {id:2,color:'#0c3d37',name:'serpentiss'},
+    TALONFALL : {id:3,color:'#371a6e',name:'talonfall'},
+    BERENHEART : {id:4,color:'#9f3f1c',name:'berenheart'}
 }
 
 let CURRENT_TEAM = null;
