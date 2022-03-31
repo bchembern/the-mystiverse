@@ -1,10 +1,9 @@
 
 const TEAMS = {
-    GOLDYNROAR : {id:1,color:'#740001',name:'goldynroar'},
-    SERPENTISS : {id:2,color:'#1A472A',name:'serpentiss'},
-    TALONFALL : {id:3,color:'#602f86',name:'talonfall'},
-    BERENHEART : {id:4,color:'#ec6f39',name:'berenheart'}
-    CACKLESTAG : {id:5,color:'#3453a3',name:'cacklestag'}
+    GRYFFINDOR : {id:1,color:'#740001',name:'gryffindor'},
+    SLYTHERIN : {id:2,color:'#1A472A',name:'slytherin'},
+    RAVENCLAW : {id:3,color:'#0E1A40',name:'ravenclaw'},
+    HUFFLEPUFF : {id:4,color:'#ECB939',name:'hufflepuff'}
 }
 
 let CURRENT_TEAM = null;
@@ -13,43 +12,35 @@ class Hat {
     static THOUGHTS = [
         {
             thought: "Feeling Brave, are you?",
-            team: TEAMS.GOLDYNROAR
+            team: TEAMS.GRYFFINDOR
         },
         {
             thought : "You seem to be a chivalrous sort",
-            team : TEAMS.GOLDYNROAR
+            team : TEAMS.GRYFFINDOR
         },
         {
             thought : "A bottomless well of ambition!",
-            team : TEAMS.SERPENTISS
+            team : TEAMS.SLYTHERIN
         },
         {
             thought : "Your pride might be your downfall",
-            team : TEAMS.SERPENTISS
+            team : TEAMS.SLYTHERIN
         },
         {
             thought : "There is much patience in you",
-            team : TEAMS.BERENHEART
+            team : TEAMS.HUFFLEPUFF
         },
         {
             thought : "Your sense of loyalty is strong",
-            team : TEAMS.BERENHEART
-        },
-        {
-            thought : "The past has no weight on your soul",
-            team : TEAMS.CACKLESTAG
-        },
-        {
-            thought : "The future awaits you",
-            team : TEAMS.CACKLESTAG
+            team : TEAMS.HUFFLEPUFF
         },
         {
             thought : "You are the careful sort",
-            team : TEAMS.TALONFALL
+            team : TEAMS.RAVENCLAW
         },
         {
             thought : "Quick witted? Or a Half Wit?",
-            team : TEAMS.TALONFALL
+            team : TEAMS.RAVENCLAW
         }
     ]
 
@@ -94,7 +85,7 @@ class Hat {
         let badgeImage = document.createElement('img');
         badgeImage.src = `./pics/${name}.png`;
         badgeImage.setAttribute("class","badge-image");
-        badgeImage.innerHTML=`<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/${name}_badge.gif" width="200px">
+        badgeImage.innerHTML=`<img src="https://github.com/prafulla-codes/sorting-hat/blob/master/pics/hufflepuff_badge.gif" width="200px">
         </img>`;
         badgeDiv.appendChild(badgeImage);
         // Congratulations Text
